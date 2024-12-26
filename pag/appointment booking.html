@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- تحديد الترميز UTF-8 لدعم جميع اللغات -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- تفعيل الاستجابة لأجهزة مختلفة -->
+    <title>حجز موعد</title> <!-- عنوان الصفحة -->
+    <link rel="stylesheet" href="style.css"> <!-- استدعاء ملف CSS خارجي -->
+<style>
+   body {
+       font-family: Arial, sans-serif; /* تحديد الخط المستخدم للنصوص */
+       margin: 0; /* إزالة المسافات الخارجية للصفحة */
+       padding: 0; /* إزالة المسافات الداخلية للصفحة */
+       background-color: #d1ecf6; /* لون خلفية الصفحة */
+   }
+
+   .container {
+       width: 300px; /* عرض العنصر المحدد */
+       margin: 0 auto; /* توسيط العنصر أفقيًا */
+       padding: 20px; /* حواف داخلية للعناصر */
+       border: 1px solid #0838e6; /* تحديد حدود بلون أزرق */
+       border-radius: 5px; /* زوايا دائرية للحدود */
+   }
+
+   label {
+       display: block; /* عرض العنصر في سطر منفصل */
+       margin-bottom: 5px; /* مسافة أسفل النص */
+   }
+
+   input, select {
+       width: 100%; /* عرض المدخلات بالكامل */
+       padding: 10px; /* حواف داخلية للمحتوى */
+       margin-bottom: 15px; /* مسافة بين العناصر */
+       box-sizing: border-box; /* حساب الحدود ضمن العرض */
+   }
+
+   button {
+       background-color: #0951fa; /* لون خلفية الزر */
+       color: rgb(255, 255, 255); /* لون النص في الزر */
+       padding: 10px 20px; /* حواف داخلية للزر */
+       border: none; /* إزالة الحدود الافتراضية */
+       border-radius: 4px; /* زوايا دائرية للزر */
+       cursor: pointer; /* تغيير شكل المؤشر عند التمرير فوق الزر */
+   }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h2>حجز موعد</h2> <!-- عنوان النموذج -->
+        <form>
+            <label for="name">الاسم:</label> <!-- تسمية حقل النص -->
+            <input type="text" id="name" name="name" required> <!-- حقل إدخال الاسم -->
+
+            <label for="phone">رقم الهاتف:</label> <!-- تسمية حقل الهاتف -->
+            <input type="tel" id="phone" name="phone" required> <!-- حقل إدخال رقم الهاتف -->
+
+            <label for="specialty">التخصص المطلوب:</label> <!-- تسمية قائمة التخصصات -->
+            <select id="specialty" name="specialty" required> <!-- قائمة لاختيار التخصص -->
+                <option value="general">عام</option> <!-- خيار "عام" -->
+                <option value="specialist">أخصائي</option> <!-- خيار "أخصائي" -->
+            </select>
+
+            <label for="doctor">اختيار الطبيب:</label> <!-- تسمية قائمة الأطباء -->
+            <select id="doctor" name="doctor" required> <!-- قائمة لاختيار الطبيب -->
+                <option value="doctor1">الطبيب الأول</option> <!-- خيار "الطبيب الأول" -->
+                <option value="doctor2">الطبيب الثاني</option> <!-- خيار "الطبيب الثاني" -->
+            </select>
+
+            <label for="department">القسم:</label> <!-- تسمية قائمة الأقسام -->
+            <select id="department" name="department" required> <!-- قائمة لاختيار القسم -->
+                <option value="">-- اختار القسم --</option> <!-- الخيار الافتراضي -->
+                <option value="cardiology">Cardiology</option> <!-- خيار "القلب" -->
+                <option value="neurology">Neurology</option> <!-- خيار "الأعصاب" -->
+                <option value="orthopedics">Orthopedics</option> <!-- خيار "العظام" -->
+                <option value="pediatrics">Pediatrics</option> <!-- خيار "الأطفال" -->
+                <option value="general">General Medicine</option> <!-- خيار "الطب العام" -->
+            </select>
+
+            <label for="date">تاريخ ووقت الحجز:</label> <!-- تسمية حقل التاريخ والوقت -->
+            <input type="datetime-local" id="date" name="date" required> <!-- حقل إدخال التاريخ والوقت -->
+
+            <button type="submit">حجز موعد</button> <!-- زر الإرسال -->
+        </form>
+    </div>
+
+    <link rel="stylesheet" href="style.css"> <!-- إعادة استدعاء ملف CSS خارجي (غير ضروري هنا) -->
+</body>
+</html>

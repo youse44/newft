@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- تحديد الترميز لتجنب مشاكل عرض النصوص -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- تحسين عرض الصفحة على الأجهزة المختلفة -->
+    <title>Emergency Service - Hospital</title> <!-- عنوان الصفحة يظهر في التبويب -->
+    <style>
+        body {
+            margin: 0; /* إزالة الهوامش الافتراضية */
+            font-family: Arial, sans-serif; /* الخط المستخدم للنصوص */
+            line-height: 1.6; /* تحسين تباعد الأسطر للنصوص */
+            color: #333; /* لون النصوص الأساسية */
+        }
+
+        header {
+            background-color: #007bff; /* لون خلفية الهيدر */
+            color: white; /* لون النص داخل الهيدر */
+            padding: 20px 10px; /* مسافة داخلية للهيدر */
+            text-align: center; /* محاذاة النص في الوسط */
+        }
+
+        header h1 {
+            margin: 0; /* إزالة الهوامش الافتراضية من العنوان */
+            font-size: 24px; /* حجم خط العنوان */
+        }
+
+        nav {
+            background-color: #f4f4f4; /* لون خلفية شريط التنقل */
+            padding: 10px 0; /* مسافة داخلية للشريط */
+            text-align: center; /* محاذاة الروابط في الوسط */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ظل بسيط أسفل الشريط */
+        }
+
+        nav a {
+            margin: 0 15px; /* مسافة بين الروابط */
+            text-decoration: none; /* إزالة التسطير من الروابط */
+            color: #007bff; /* لون النصوص للروابط */
+            font-weight: bold; /* جعل النص غامقًا */
+            transition: color 0.3s; /* تأثير تغيّر اللون عند التمرير */
+        }
+
+        nav a:hover {
+            color: #0056b3; /* لون النص عند تمرير المؤشر */
+        }
+
+        main {
+            padding: 20px; /* مسافة داخلية للمحتوى الرئيسي */
+        }
+
+        section {
+            margin-bottom: 30px; /* مسافة بين الأقسام */
+            padding: 20px; /* مسافة داخلية للقسم */
+            border-radius: 10px; /* زوايا دائرية للصندوق */
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* ظل بسيط حول القسم */
+            background-color: #fff; /* لون خلفية القسم */
+        }
+
+        section h2 {
+            color: #007bff; /* لون النصوص للعناوين */
+            margin-bottom: 15px; /* مسافة أسفل العنوان */
+            font-size: 20px; /* حجم النص للعناوين */
+            border-bottom: 2px solid #f4f4f4; /* خط أسفل العنوان */
+            padding-bottom: 5px; /* مسافة بين النص والخط */
+        }
+
+        ul {
+            list-style: none; /* إزالة العلامات الافتراضية للقائمة */
+            padding: 0; /* إزالة الحواف الافتراضية */
+        }
+
+        ul li {
+            padding: 5px 0; /* مسافة بين العناصر */
+            border-bottom: 1px solid #f4f4f4; /* خط أسفل كل عنصر */
+        }
+
+        ul li:last-child {
+            border-bottom: none; /* إزالة الخط من العنصر الأخير */
+        }
+
+        .button {
+            display: inline-block; /* جعل الزر داخل نفس السطر */
+            margin-top: 10px; /* مسافة أعلى الزر */
+            padding: 10px 15px; /* مسافة داخلية للزر */
+            background-color: #007bff; /* لون خلفية الزر */
+            color: white; /* لون النص داخل الزر */
+            text-decoration: none; /* إزالة التسطير من النص */
+            border-radius: 5px; /* زوايا دائرية للزر */
+            transition: background-color 0.3s; /* تأثير تغيّر اللون عند التمرير */
+        }
+
+        .button:hover {
+            background-color: #0056b3; /* لون الزر عند التمرير */
+        }
+
+        footer {
+            background-color: #333; /* لون خلفية الفوتر */
+            color: white; /* لون النصوص داخل الفوتر */
+            text-align: center; /* محاذاة النصوص في الوسط */
+            padding: 10px 0; /* مسافة داخلية للفوتر */
+            margin-top: 20px; /* مسافة أعلى الفوتر */
+        }
+
+        footer p {
+            margin: 0; /* إزالة الهوامش الافتراضية للنص */
+            font-size: 14px; /* حجم النص في الفوتر */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav a {
+                display: block; /* جعل الروابط تظهر ككتلة */
+                margin: 10px 0; /* مسافة بين الروابط في العرض الصغير */
+            }
+            main {
+                padding: 10px; /* تقليل الحواف الداخلية */
+            }
+            section {
+                padding: 15px; /* تقليل المسافة الداخلية للأقسام */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- بداية الجسم -->
+    <header>
+        <h1>Emergency Service - Hospital</h1> <!-- عنوان الهيدر -->
+    </header>
+    <nav>
+        <a href="#contact">Contact Us</a> <!-- رابط لقسم الاتصال -->
+        <a href="#services">Available Services</a> <!-- رابط لقسم الخدمات -->
+        <a href="#first-aid">First Aid</a> <!-- رابط لقسم الإسعافات الأولية -->
+        <a href="#critical-care">Critical Care</a> <!-- رابط لقسم الرعاية الحرجة -->
+    </nav>
+    <main>
+        <section id="contact">
+            <h2>Emergency Numbers</h2> <!-- عنوان القسم -->
+            <div class="contact-info">
+                <p>You can contact our Emergency service on the following numbers:</p>
+                <ul>
+                    <li>123: Hotline</li> <!-- رقم الطوارئ -->
+                    <li>01032655404: Inquiries</li> <!-- رقم الاستفسارات -->
+                    <li>Email: emergency@hospital.com</li> <!-- البريد الإلكتروني -->
+                </ul>
+                <a href="tel:123" class="button">Call Now</a> <!-- زر للاتصال -->
+            </div>
+        </section>
+        <!-- باقي الأقسام مشابهة -->
+    </main>
+    <footer>
+        <p>Emergency Hospital - All Rights Reserved &copy; 2024</p> <!-- نص الفوتر -->
+    </footer>
+</body>
+</html>
+

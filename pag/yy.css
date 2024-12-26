@@ -1,0 +1,84 @@
+/* تنسيق أساسي للصفحة */
+body {
+    font-family: Arial, sans-serif; /* نوع الخط */
+    margin: 0; /* إزالة الهوامش */
+    padding: 0; /* إزالة الحشوات */
+    background-color: #f4f4f9; /* لون الخلفية */
+    color: #333; /* لون النص */
+}
+
+/* تنسيق الهيدر */
+header {
+    background-color: #00b4cc; /* لون خلفية الهيدر */
+    color: white; /* لون النص */
+    text-align: center; /* توسيط النصوص */
+    padding: 20px; /* مساحة داخلية */
+}
+
+header h1 {
+    font-size: 2.5em; /* حجم العنوان */
+    margin-bottom: 10px; /* مسافة أسفل العنوان */
+}
+
+header p {
+    font-size: 1.2em; /* حجم النص الوصفي */
+    margin: 0; /* إزالة المسافة حول النص */
+}
+
+/* تنسيق قسم الحجز */
+.booking-form {
+    max-width: 600px; /* عرض القسم */
+    margin: 30px auto; /* توسيط القسم */
+    background: white; /* خلفية بيضاء */
+    border-radius: 8px; /* زوايا دائرية */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ظل للصندوق */
+    padding: 20px 30px; /* مساحة داخلية */
+}
+
+.booking-form h2 {
+    text-align: center; /* توسيط العنوان */
+    color: #00b4cc; /* لون العنوان */
+    margin-bottom: 20px; /* مسافة أسفل العنوان */
+}
+
+/* تنسيق الحقول */
+.booking-form label {
+    display: block; /* عرض الحقل بالكامل */
+    margin-bottom: 5px; /* مسافة أسفل النص */
+    font-weight: bold; /* نص غامق */
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%; /* عرض كامل الحقل */
+    padding: 10px; /* مساحة داخلية */
+    margin-bottom: 15px; /* مسافة بين الحقول */
+    border: 1px solid #ddd; /* إطار خفيف */
+    border-radius: 5px; /* زوايا دائرية */
+    font-size: 1em; /* حجم النص */
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+    outline: none; /* إزالة الإطار الافتراضي */
+    border-color: #00b4cc; /* لون الإطار عند التفاعل */
+}
+
+/* زر الحجز */
+.booking-form .btn {
+    display: block; /* عرض الزر بالكامل */
+    width: 100%; /* عرض كامل الزر */
+    padding: 10px; /* مساحة داخلية */
+    background-color: #00b4cc; /* لون الخلفية */
+    color: white; /* لون النص */
+    font-size: 1.1em; /* حجم النص */
+    font-weight: bold; /* الخط عريض */
+    border: none; /* إزالة الإطار */
+    border-radius: 5px; /* زوايا دائرية */
+    cursor: pointer; /* مؤشر يدوي */
+    transition: background-color 0.3s; /* حركة ناعمة عند التفاعل */
+}
+
+.booking-form .btn:hover {
+    background-color: #007a8a; /* لون مختلف عند التحويم */
+}

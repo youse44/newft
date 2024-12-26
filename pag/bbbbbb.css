@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif; /* الخط المستخدم للنصوص */
+    direction: rtl; /* الاتجاه من اليمين إلى اليسار لدعم اللغة العربية */
+    margin: 0; /* إزالة الهوامش الافتراضية */
+    padding: 0; /* إزالة الحواف الافتراضية */
+    background-color: rgb(249, 246, 255); /* لون خلفية الصفحة */
+}
+
+header {
+    background-color: aqua; /* لون خلفية الهيدر */
+    color: rgb(0, 38, 253); /* لون النص داخل الهيدر */
+    text-align: center; /* محاذاة النص في الوسط */
+    padding: 1rem; /* حواف داخلية للمساحة */
+}
+
+h1 {
+    margin: 0; /* إزالة الهوامش الافتراضية من العنوان */
+}
+
+main {
+    display: flex; /* استخدام عرض الشبكة لتمكين الترتيب الأفقي */
+    flex-wrap: wrap; /* السماح بالتفاف العناصر في حال ضيق العرض */
+    gap: 20px; /* إضافة مسافة بين العناصر */
+    justify-content: center; /* محاذاة العناصر إلى المركز */
+    padding: 20px; /* حواف داخلية للعنصر */
+}
+
+.doctor-card {
+    background-color: rgb(0, 242, 255); /* لون خلفية البطاقة */
+    border: 1px solid; /* حدود البطاقة */
+    border-radius: 10px; /* زوايا البطاقة دائرية */
+    width: 300px; /* عرض البطاقة */
+    text-align: center; /* محاذاة النص في الوسط */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل لطيف حول البطاقة */
+    overflow: hidden; /* منع النصوص والصور من الخروج عن حدود البطاقة */
+}
+
+.doctor-card img {
+    width: 100%; /* جعل الصورة تغطي عرض البطاقة بالكامل */
+    height: 200px; /* تحديد ارتفاع ثابت للصورة */
+    object-fit: cover; /* ضبط الصورة لتناسب المساحة المحددة */
+}
+
+.doctor-info {
+    padding: 15px; /* حواف داخلية للنصوص داخل القسم */
+}
+
+.doctor-info h2 {
+    font-size: 1.2rem; /* حجم الخط للعناوين */
+    margin: 10px 0; /* مسافة بين العنوان والعناصر المحيطة */
+}
+
+.doctor-info a {
+    text-decoration: none; /* إزالة التسطير من الروابط */
+    color: rgb(0, 0, 0); /* لون النص للروابط */
+}
+
+.doctor-info a:hover {
+    text-decoration: underline; /* إضافة تسطير عند تمرير المؤشر على الرابط */
+}
+
+.doctor-info p {
+    color: rgb(208, 0, 255); /* لون النصوص الإضافية داخل القسم */
+    margin: 0; /* إزالة الهوامش الافتراضية */
+}

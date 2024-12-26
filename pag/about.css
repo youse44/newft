@@ -1,0 +1,139 @@
+/* General Reset */ 
+* {
+    margin: 0; /* إزالة الهوامش الافتراضية لجميع العناصر */
+    padding: 0; /* إزالة الحشو الافتراضي لجميع العناصر */
+    box-sizing: border-box; /* تسهيل حساب الأبعاد بحيث يشمل الحدود والحشو */
+    font-family: Arial, sans-serif; /* تعيين الخط الافتراضي للمستند */
+}
+
+body {
+    line-height: 1.6; /* تحسين المسافة بين السطور */
+    color: #333; /* لون النص الأساسي */
+    background-color: #f9f9f9; /* لون الخلفية الأساسي */
+}
+
+/* Header */
+header {
+    display: flex; /* جعل العنوان رئيسياً باستخدام توزيع مرن */
+    justify-content: space-between; /* توزيع المحتويات بالتساوي بين الأطراف */
+    align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+    background: #00b4cc; /* لون خلفية الرأس */
+    color: #fff; /* لون النص في الرأس */
+    padding: 10px 20px; /* حواف داخلية للرأس */
+}
+
+header .logo {
+    font-size: 1.5em; /* حجم خط الشعار */
+    font-weight: bold; /* جعل الشعار غامقًا */
+}
+
+header nav ul {
+    list-style: none; /* إزالة النقط الافتراضية من القائمة */
+    display: flex; /* جعل القائمة أفقية */
+    gap: 15px; /* مسافة بين عناصر القائمة */
+}
+
+header nav ul li a {
+    text-decoration: none; /* إزالة الخط السفلي الافتراضي للروابط */
+    color: #fff; /* لون النص للروابط */
+    font-weight: bold; /* جعل النص غامقًا */
+}
+
+header nav ul li a.active, header nav ul li a:hover {
+    text-decoration: underline; /* تسطير النص عند التمرير أو إذا كانت الصفحة نشطة */
+}
+
+/* About Section */
+.about {
+    background-color: #fff; /* خلفية بيضاء للقسم */
+    padding: 40px 20px; /* مسافة داخلية للقسم */
+    color: #555; /* لون النص داخل القسم */
+}
+
+.section-heading {
+    text-align: center; /* محاذاة النص في المنتصف */
+    margin-bottom: 30px; /* مسافة أسفل عنوان القسم */
+}
+
+.section-heading h1 {
+    font-size: 2.5em; /* حجم كبير لعناوين الأقسام */
+    color: #00b4cc; /* لون العنوان */
+}
+
+.section-heading p {
+    font-size: 1.1em; /* حجم متوسط للوصف */
+    color: #777; /* لون فرعي للوصف */
+}
+
+.container {
+    max-width: 1200px; /* تحديد العرض الأقصى للمحتوى */
+    margin: auto; /* محاذاة المحتوى في المنتصف */
+}
+
+h2 {
+    color: #00b4cc; /* لون فرعي للعناوين */
+    margin: 20px 0 10px; /* مسافة حول العنوان */
+    font-size: 1.8em; /* حجم كبير للعناوين */
+}
+
+.intro, .vision-mission, .values, .team, .media {
+    margin-bottom: 30px; /* مسافة بين الأقسام */
+}
+
+ul {
+    list-style: none; /* إزالة النقط الافتراضية للقوائم */
+}
+
+ul li {
+    margin-bottom: 10px; /* مسافة بين عناصر القائمة */
+    font-size: 1.1em; /* حجم النص في القائمة */
+}
+
+ul li span {
+    font-weight: bold; /* جعل النص غامقًا */
+    color: #00b4cc; /* لون النص */
+}
+
+/* Management Team */
+.team-members {
+    display: flex; /* جعل الأعضاء في صفوف */
+    gap: 20px; /* مسافة بين الأعضاء */
+    justify-content: center; /* محاذاة الأعضاء في المنتصف */
+    flex-wrap: wrap; /* السماح بانتقال الأعضاء إلى الأسطر التالية عند الحاجة */
+}
+
+.team-members .member {
+    text-align: center; /* محاذاة النص في المنتصف لكل عضو */
+    max-width: 200px; /* تحديد عرض الأعضاء */
+}
+
+.team-members img {
+    width: 100%; /* جعل الصورة تتناسب مع العرض */
+    border-radius: 50%; /* جعل الصورة دائرية */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* إضافة ظل للصورة */
+}
+
+.team-members h3 {
+    margin: 10px 0 5px; /* مسافة حول اسم العضو */
+    color: #333; /* لون النص */
+}
+
+.team-members p {
+    color: #777; /* لون النص الفرعي */
+}
+
+/* Media */
+.media video {
+    border-radius: 10px; /* زوايا دائرية للفيديو */
+    box-shadow: 4px 8px wheat; /* إضافة ظل للفيديو */
+}
+
+/* Footer */
+footer {
+    background: #00b4cc; /* لون خلفية التذييل */
+    color: white; /* لون النص داخل التذييل */
+    text-align: center; /* محاذاة النص في المنتصف */
+    padding: 10px 0; /* مسافة داخلية */
+    margin-top: 20px; /* مسافة علوية للتذييل */
+}
+

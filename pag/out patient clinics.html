@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"> <!-- تحديد اللغة المستخدمة في الصفحة على أنها العربية والاتجاه من اليمين لليسار -->
+
+<head>
+    <meta charset="UTF-8"> <!-- تحديد الترميز المستخدم في الصفحة على أنه UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- لضمان التناسب الصحيح للصفحة على الأجهزة المحمولة -->
+    <title>العيادات الخارجية</title> <!-- عنوان الصفحة الذي يظهر في التبويب الخاص بالمتصفح -->
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* تحديد خط الصفحة */
+            margin: 0; /* إزالة الهوامش الافتراضية */
+            padding: 0; /* إزالة الحشوات الافتراضية */
+            background-color: #45abdd; /* تعيين لون الخلفية للصفحة */
+        }
+        header {
+            text-align: center; /* محاذاة النص في العنوان إلى الوسط */
+            padding: 1rem 0; /* إضافة حشوة في الأعلى والأسفل */
+            position: relative; /* تحديد الموقع النسبي للعنصر */
+        }
+        header h1 {
+            background-image: url(hospital-background-8uzvaaj1wielv1ca.jpg); /* تعيين صورة الخلفية للعنوان */
+            background-size: cover; /* جعل الصورة تغطي كامل العنصر */
+            background-position: center; /* تحديد موقع الصورة في المنتصف */
+            color: white; /* تحديد لون النص */
+            padding: 1rem 2rem; /* إضافة حشوة داخلية للعنوان */
+            display: inline-block; /* جعل العنوان عنصرًا داخليًا يعرض بجانب العناصر الأخرى */
+            border-radius: 8px; /* تحديد حواف مستديرة */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* إضافة ظل للعنوان */
+        }
+        .container {
+            max-width: 1200px; /* تحديد الحد الأقصى للعرض */
+            margin: 0 auto; /* محاذاة المحتوى في المنتصف */
+            padding: 1rem; /* إضافة حشوة للمحتوى */
+            background: rgba(255, 255, 255, 0.9); /* تعيين خلفية شفافة للمحتوى */
+            border-radius: 8px; /* تحديد حواف مستديرة للمحتوى */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* إضافة ظل للمحتوى */
+        }
+        .section {
+            background: white; /* تعيين خلفية بيضاء لكل قسم */
+            margin: 1rem 0; /* إضافة هامش بين الأقسام */
+            padding: 1rem; /* إضافة حشوة داخلية لكل قسم */
+            border-radius: 8px; /* تحديد حواف مستديرة للأقسام */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* إضافة ظل للأقسام */
+        }
+        h2 {
+            color: #007bff; /* تعيين لون العنوان الفرعي */
+        }
+        ul {
+            list-style: none; /* إزالة النقاط من القوائم */
+            padding: 0; /* إزالة الحشوة الافتراضية للقائمة */
+        }
+        ul li {
+            margin: 0.5rem 0; /* إضافة هامش بين العناصر في القائمة */
+        }
+        .table-container {
+            overflow-x: auto; /* تمكين التمرير الأفقي إذا كانت الجدول عريضًا جدًا */
+        }
+        table {
+            width: 100%; /* جعل الجدول يغطي العرض الكامل */
+            border-collapse: collapse; /* دمج حدود الجدول */
+            margin-top: 1rem; /* إضافة هامش أعلى الجدول */
+        }
+        table th, table td {
+            border: 1px solid #ddd; /* تعيين حدود خفيفة للخلايا */
+            padding: 0.5rem; /* إضافة حشوة داخلية للخلايا */
+            text-align: center; /* محاذاة النص في الخلايا إلى المركز */
+        }
+        table th {
+            background-color: #007bff; /* تعيين خلفية للعنوان في الجدول */
+            color: white; /* تغيير لون النص في عناوين الجدول */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>العيادات الخارجية</h1> <!-- عنوان الصفحة الرئيسي -->
+    </header>
+
+    <div class="container">
+        <!-- نبذة عامة عن العيادات -->
+        <section class="section">
+            <h2>نبذة عامة عن العيادات</h2> <!-- عنوان فرعي -->
+            <p>توفر العيادات الخارجية خدمات طبية شاملة للمرضى في مختلف التخصصات الطبية. يتميز فريقنا الطبي بالكفاءة والخبرة لتقديم أفضل رعاية صحية.</p> <!-- وصف الخدمة المقدمة في العيادات -->
+        </section>
+
+        <!-- جدول المواعيد -->
+        <section class="section">
+            <h2>جدول المواعيد</h2> <!-- عنوان فرعي -->
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>الطبيب</th> <!-- رأس العمود -->
+                            <th>التخصص</th> <!-- رأس العمود -->
+                            <th>أيام العمل</th> <!-- رأس العمود -->
+                            <th>مواعيد العمل</th> <!-- رأس العمود -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>د. أحمد محمد</td> <!-- اسم الطبيب -->
+                            <td>الباطنة</td> <!-- التخصص -->
+                            <td>الأحد - الثلاثاء</td> <!-- أيام العمل -->
+                            <td>9:00 صباحًا - 1:00 مساءً</td> <!-- مواعيد العمل -->
+                        </tr>
+                        <tr>
+                            <td>د. ليلى خالد</td>
+                            <td>الأطفال</td>
+                            <td>الإثنين - الأربعاء</td>
+                            <td>10:00 صباحًا - 2:00 مساءً</td>
+                        </tr>
+                        <tr>
+                            <td>د. محمد علي</td>
+                            <td>العيون</td>
+                            <td>الخميس</td>
+                            <td>11:00 صباحًا - 3:00 مساءً</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- التخصصات المتاحة -->
+        <section class="section">
+            <h2>التخصصات المتاحة</h2> <!-- عنوان فرعي -->
+            <ul>
+                <li>الباطنة</li> <!-- التخصص -->
+                <li>الأطفال</li>
+                <li>العيون</li>
+                <li>النساء والتوليد</li>
+                <li>الجلدية</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- نموذج حجز موعد -->
+    <div class="container">
+        <form>
+            <label for="name">الاسم:</label> <!-- حقل إدخال للاسم -->
+            <input type="text" id="name" name="name" required> <!-- حقل النص للاسم -->
+
+            <label for="phone">رقم الهاتف:</label> <!-- حقل إدخال لرقم الهاتف -->
+            <input type="tel" id="phone" name="phone" required> <!-- حقل النص لرقم الهاتف -->
+
+            <label for="department">القسم:</label> <!-- حقل اختيار القسم -->
+            <select id="department" name="department" required>
+                <option value="">-- اختار القسم --</option> <!-- خيار فارغ -->
+                <option value="cardiology">Cardiology</option> <!-- قسم القلب -->
+                <option value="neurology">Neurology</option> <!-- قسم الأعصاب -->
+                <option value="orthopedics">Orthopedics</option> <!-- قسم العظام -->
+                <option value="pediatrics">Pediatrics</option> <!-- قسم الأطفال -->
+                <option value="general">General Medicine</option> <!-- الطب العام -->
+            </select>
+            <label for="date">تاريخ ووقت الحجز:</label> <!-- حقل إدخال لتاريخ ووقت الحجز -->
+            <input type="datetime-local" id="date" name="date" required> <!-- حقل تحديد التاريخ والوقت -->
+            <button type="submit">حجز موعد</button> <!-- زر إرسال النموذج -->
+        </form>
+    </div>
+</body>
+</html>

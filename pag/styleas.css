@@ -1,0 +1,138 @@
+@media (max-width: 768px) {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* تحديد نوع الخط المستخدم في الصفحة */
+    background-size: cover;
+    margin: 0; /* إزالة الهامش الافتراضي للصفحة */
+    padding: 0; /* إزالة التباعد الداخلي الافتراضي */
+    box-sizing: border-box; /* يجعل العرض يشمل الحواف والتعبئة */
+    line-height: 1.6; /* تحديد ارتفاع الأسطر للنص */
+}
+
+header {
+    background-color: #00cccc; /* لون خلفية الرأس */
+    color: white; /* لون النص */
+    padding: 10px 20px; /* تحديد التباعد الداخلي (أعلى وأسفل 10px، يمين ويسار 20px) */
+    display: flex; /* استخدام فليكس بوكس لترتيب العناصر */
+    justify-content: space-between; /* توزيع العناصر على جانبي الرأس */
+    align-items: center; /* محاذاة العناصر في المنتصف عموديًا */
+}
+
+header .logo {
+    font-size: 1.5em; /* حجم النص للشعار */
+    font-weight: bold; /* جعل النص عريض */
+}
+
+header nav ul {
+    list-style: none; /* إزالة النقاط من القائمة */
+    flex-wrap: wrap;
+    display: flex; /* ترتيب عناصر القائمة بجانب بعضها باستخدام فليكس */
+    gap: 15px; /* تباعد بين عناصر القائمة */
+}
+
+header nav ul li {
+    display: inline; /* عرض عناصر القائمة بشكل أفقي */
+}
+
+header nav ul li a {
+    color: white; /* لون النص للروابط */
+    text-decoration: none; /* إزالة التسطير تحت الروابط */
+    font-weight: bold; /* جعل النص عريض */
+}
+
+header nav ul li a:hover {
+    text-decoration: underline; /* إضافة تسطير عند تحريك المؤشر فوق الرابط */
+}
+
+/* Hero Section */
+#home {
+    background: linear-gradient(
+        #00b4cc(0, 197, 204, 0), /* تدرج لوني يبدأ بلون سماوي */
+        rgba(0, 204, 187, 0.7) /* ينتهي بلون شفاف */
+    ), url('hospital.jpg') no-repeat center center/cover; /* إضافة صورة خلفية مع تموضع مركزي وتغطية كاملة */
+    color: rgb(255, 255, 255); /* لون النص أبيض */
+    text-align: center; /* محاذاة النص في المنتصف */
+    padding: 50px 20px; /* التباعد الداخلي (أعلى وأسفل 50px، يمين ويسار 20px) */
+}
+
+#home h1 {
+    font-size: 2.5em; /* حجم النص للعنوان الرئيسي */
+}
+
+#home p {
+    font-size: 1.2em; /* حجم النص للفقرة */
+    margin: 20px 0; /* تباعد علوي وسفلي بين الفقرات */
+}
+
+#home .btn {
+    background-color: #00eeff; /* لون خلفية الزر */
+    color: white; /* لون النص داخل الزر */
+    padding: 10px 20px; /* التباعد الداخلي داخل الزر */
+    text-decoration: none; /* إزالة التسطير تحت النص */
+    border-radius: 5px; /* جعل حواف الزر دائرية */
+}
+
+#home .btn:hover {
+    background-color: #00b4cc; /* تغيير لون الخلفية عند تحريك المؤشر على الزر */
+}
+
+
+/* Sections */
+/* تنسيق عام للقسم */
+section {
+    position: relative; /* تحديد موقع العناصر بشكل نسبي */
+    padding: 30px; /* تباعد داخلي */
+    color: #fff; /* لون النص أبيض */
+    text-align: center; /* محاذاة النص في المنتصف */
+    font-family: Arial, sans-serif;
+}
+
+/* تنسيق عام */
+footer {
+    background-color: rgb(0, 162, 255); /* لون الخلفية الداكن */
+    color: #fff; /* لون النص */
+    text-align: center; /* محاذاة النص في المنتصف */
+    padding: 20px 10px; /* تباعد داخلي */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* تنسيق نص معلومات الاتصال */
+footer .contact-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #d3f4ff; /* لون أفتح للنص */
+}
+
+/* تنسيق أزرار وسائل التواصل الاجتماعي */
+.social-buttons {
+    margin: 15px 0;
+}
+
+.social-btn {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #006370; /* لون النص */
+    background-color: #fff; /* خلفية بيضاء للأزرار */
+    border: 2px solid #fff; /* إطار أبيض للأزرار */
+    border-radius: 5px; /* زوايا منحنية */
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+/* تأثير التحويل عند تمرير الماوس */
+.social-btn:hover {
+    background-color: rgb(0, 217, 255); /* لون مميز عند التحويل */
+    color: #fff; /* لون النص أبيض */
+    border-color: #0078a0;
+}
+
+/* نص حقوق النشر */
+.copyright {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #d3f4ff;
+}
+}

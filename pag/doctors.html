@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- يحدد ترميز الأحرف للمستند -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- يجعل الموقع متجاوبًا مع جميع الأجهزة -->
+    <title>Doctors</title> <!-- عنوان الصفحة الذي يظهر في شريط المتصفح -->
+    <link rel="stylesheet" href="gg.css"> <!-- يربط ملف CSS خارجي لتنسيق الصفحة -->
+</head>
+<body>
+    <!-- القسم العلوي للموقع -->
+    <header>
+        <h1>Our Doctors</h1> <!-- عنوان رئيسي -->
+        <p>Meet our highly qualified and experienced medical professionals.</p> <!-- وصف مختصر عن الأطباء -->
+    </header>
+
+    <!-- قسم يعرض الأطباء -->
+    <section class="doctors">
+        <!-- بطاقة الطبيب الأول -->
+        <div class="doctor-card"> <!-- يحتوي بطاقة الطبيب -->
+             <img src="1.jpeg" alt="doctor 1"><!-- صورة الطبيب -->
+            <h2>Dr.yousef mansour</h2> <!-- اسم الطبيب -->
+            <p><strong>Specialty:</strong> Cardiologist</p> <!-- تخصص الطبيب -->
+            <button onclick="showProfile('profile1')">View Profile</button> <!-- زر لعرض السيرة الذاتية -->
+            
+            <!-- السيرة الذاتية للطبيب -->
+            <div id="profile1" class="profile" style="display: none;"> <!-- نص مخفي يظهر عند الضغط على الزر -->
+                <h3>Dr. yousef mansour</h3> <!-- اسم الطبيب في السيرة الذاتية -->
+                <p><strong>Bio:</strong> Experienced cardiologist with 20+ years of practice.</p> <!-- نبذة عن الطبيب -->
+                <p><strong>Certificates:</strong> MD, PhD in Cardiology</p> <!-- الشهادات الحاصل عليها -->
+                <p><strong>Experience:</strong> 20+ Years</p> <!-- عدد سنوات الخبرة -->
+                <button onclick="hideProfile('profile1')">Close</button> <!-- زر لإغلاق السيرة الذاتية -->
+            </div>
+        </div>
+
+        <!-- بطاقة الطبيب الثاني -->
+        <div class="doctor-card"> <!-- يحتوي بطاقة الطبيب -->
+            <img src=2.jpeg alt="Doctor 2"> <!-- صورة الطبيب -->
+            <h2>Dr. Sarah Johnson</h2> <!-- اسم الطبيب -->
+            <p><strong>Specialty:</strong> Neurologist</p> <!-- تخصص الطبيب -->
+            <button onclick="showProfile('profile2')">View Profile</button> <!-- زر لعرض السيرة الذاتية -->
+            
+            <!-- السيرة الذاتية للطبيب -->
+            <div id="profile2" class="profile" style="display: none;"> <!-- نص مخفي يظهر عند الضغط على الزر -->
+                <h3>Dr. Sarah Johnson</h3> <!-- اسم الطبيب في السيرة الذاتية -->
+                <p><strong>Bio:</strong> Leading neurologist specializing in brain disorders.</p> <!-- نبذة عن الطبيب -->
+                <p><strong>Certificates:</strong> MD, Fellowship in Neurology</p> <!-- الشهادات الحاصل عليها -->
+                <p><strong>Experience:</strong> 15+ Years</p> <!-- عدد سنوات الخبرة -->
+                <button onclick="hideProfile('profile2')">Close</button> <!-- زر لإغلاق السيرة الذاتية -->
+            </div>
+        </div>
+
+        <!-- أضف بطاقات لأطباء إضافيين بنفس النمط -->
+        <!-- كرر نفس النموذج مع تغيير البيانات -->
+        
+        <div class="doctor-card">
+            <img src="3.jpeg" alt="Doctor 3">
+            <h2>Dr. kero mina</h2>
+            <p><strong>Specialty:</strong> Orthopedic Surgeon</p>
+            <button onclick="showProfile('profile3')">View Profile</button>
+            <div id="profile3" class="profile" style="display: none;">
+                <h3>Dr. kero mina</h3>
+                <p><strong>Bio:</strong> Renowned orthopedic surgeon with over 18 years of experience.</p>
+                <p><strong>Certificates:</strong> MD, Fellowship in Orthopedics</p>
+                <p><strong>Experience:</strong> 18+ Years</p>
+                <button onclick="hideProfile('profile3')">Close</button>
+            </div>
+        </div>
+        <div class="doctor-card">
+            <img src="4.jpeg" alt="Doctor 4">
+            <h2>Dr. omer atef</h2>
+            <p><strong>Specialty:</strong> Pediatrician</p>
+            <button onclick="showProfile('profile4')">View Profile</button>
+            <div id="profile4" class="profile" style="display: none;">
+                <h3>Dr. omer ate</h3>
+                <p><strong>Bio:</strong> Expert pediatrician providing exceptional child care.</p>
+                <p><strong>Certificates:</strong> MD in Pediatrics</p>
+                <p><strong>Experience:</strong> 12+ Years</p>
+                <button onclick="hideProfile('profile4')">Close</button>
+            </div>
+        </div>
+        <div class="doctor-card">
+            <img src="5.jpeg" alt="Doctor 5">
+            <h2>Dr. mustafa mahmoud</h2>
+            <p><strong>Specialty:</strong> Dermatologist</p>
+            <button onclick="showProfile('profile5')">View Profile</button>
+            <div id="profile5" class="profile" style="display: none;">
+                <h3>Dr. mustafa mahmoud </h3>
+                <p><strong>Bio:</strong> Dermatologist specializing in skin health and treatments.</p>
+                <p><strong>Certificates:</strong> MD in Dermatology</p>
+                <p><strong>Experience:</strong> 10+ Years</p>
+                <button onclick="hideProfile('profile5')">Close</button>
+            </div>
+        </div>
+
+        <!-- Duplicate for remaining doctors -->
+        <div class="doctor-card">
+            <img src="6.jpeg" alt="Doctor 6">
+            <h2>Dr. moataz yasser</h2>
+            <p><strong>Specialty:</strong> Gynecologist</p>
+            <button onclick="showProfile('profile6')">View Profile</button>
+            <div id="profile6" class="profile" style="display: none;">
+                <h3>Dr. moataz yasser</h3>
+                <p><strong>Bio:</strong> Expert in women's health and obstetrics.</p>
+                <p><strong>Certificates:</strong> MD in Gynecology</p>
+                <p><strong>Experience:</strong> 14+ Years</p>
+                <button onclick="hideProfile('profile6')">Close</button>
+            </div>
+        </div>
+
+        <div class="doctor-card">
+            <img src="7.jpeg" alt="Doctor 7">
+            <h2>Dr. yousef ibrahim</h2>
+            <p><strong>Specialty:</strong> Oncologist</p>
+            <button onclick="showProfile('profile7')">View Profile</button>
+            <div id="profile7" class="profile" style="display: none;">
+                <h3>Dr. yousef ibrahim</h3>
+                <p><strong>Bio:</strong> Specialist in cancer treatments and research.</p>
+                <p><strong>Certificates:</strong> MD in Oncology</p>
+                <p><strong>Experience:</strong> 16+ Years</p>
+                <button onclick="hideProfile('profile7')">Close</button>
+            </div>
+        </div>
+
+        <div class="doctor-card">
+            <img src="8.jpeg" alt="Doctor 8">
+            <h2>Dr.ahmed atte</h2>
+            <p><strong>Specialty:</strong> Endocrinologist</p>
+            <button onclick="showProfile('profile8')">View Profile</button>
+            <div id="profile8" class="profile" style="display: none;">
+                <h3>Dr.ahmed atte</h3>
+                <p><strong>Bio:</strong> Endocrinologist focusing on hormone-related issues.</p>
+                <p><strong>Certificates:</strong> MD in Endocrinology</p>
+                <p><strong>Experience:</strong> 11+ Years</p>
+                <button onclick="hideProfile('profile8')">Close</button>
+            </div>
+        </div>
+
+        <div class="doctor-card">
+            <img src="9.jpeg" alt="Doctor 9">
+            <h2>Dr. kirolos minqirius</h2>
+            <p><strong>Specialty:</strong> Psychiatrist</p>
+            <button onclick="showProfile('profile9')">View Profile</button>
+            <div id="profile9" class="profile" style="display: none;">
+                <h3>Dr. kirolos minqirius</h3>
+                <p><strong>Bio:</strong> Psychiatrist specializing in mental health care.</p>
+                <p><strong>Certificates:</strong> MD in Psychiatry</p>
+                <p><strong>Experience:</strong> 12+ Years</p>
+                <button onclick="hideProfile('profile9')">Close</button>
+            </div>
+        </div>
+
+        <div class="doctor-card">
+            <img src="10.jpeg" alt="Doctor 10">
+            <h2>Dr. saad masoud</h2>
+            <p><strong>Specialty:</strong> Radiologist</p>
+            <button onclick="showProfile('profile10')">View Profile</button>
+            <div id="profile10" class="profile" style="display: none;">
+                <h3>Dr. saad masoud</h3>
+                <p><strong>Bio:</strong> Radiologist with expertise in imaging and diagnostics.</p>
+                <p><strong>Certificates:</strong> MD in Radiology</p>
+                <p><strong>Experience:</strong> 9+ Years</p>
+                <button onclick="hideProfile('profile10')">Close</button>
+            </div>
+        </div>
+        <!-- تابع إضافة البطاقات حتى تصل إلى 10 أطباء -->
+    </section>
+
+    <!-- أكواد جافاسكريبت للتحكم بعرض وإخفاء السيرة الذاتية -->
+    <script>
+        // دالة لعرض السيرة الذاتية للطبيب عند الضغط على زر "View Profile"
+        function showProfile(profileId) {
+            document.getElementById(profileId).style.display = "block"; // عرض العنصر المخفي
+        }
+
+        // دالة لإخفاء السيرة الذاتية للطبيب عند الضغط على زر "Close"
+        function hideProfile(profileId) {
+            document.getElementById(profileId).style.display = "none"; // إخفاء العنصر
+        }
+    </script>
+</body>
+</html>

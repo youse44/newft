@@ -1,0 +1,84 @@
+/* General reset and styling */
+* {
+    margin: 0; /* إزالة الهوامش الافتراضية لجميع العناصر */
+    padding: 0; /* إزالة الحشوات الافتراضية لجميع العناصر */
+    box-sizing: border-box; /* تعيين طريقة حساب الأبعاد بحيث يشمل الحشو والحدود */
+}
+
+/* Body and container styling */
+body {
+    font-family: Arial, sans-serif; /* تعيين خط الصفحة إلى Arial أو خط بديل */
+    background-color: rgb(0, 153, 255); /* تعيين خلفية الصفحة إلى اللون الرمادي الفاتح */
+    padding: 20px; /* إضافة حشوة حول الصفحة بمقدار 20px */
+}
+
+.container {
+    max-width: 900px; /* تعيين أقصى عرض للحاوية إلى 900px */
+    margin: 0 auto; /* محاذاة الحاوية إلى المنتصف */
+    background-color: rgb(0, 132, 255)); /* تعيين خلفية الحاوية إلى اللون الأبيض */
+    padding: 20px; /* إضافة حشوة داخلية بمقدار 20px */
+    border-radius: 8px; /* تعيين حواف مدورة للحاوية بمقدار 8px */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف حول الحاوية */
+}
+
+/* Header styling */
+h1 {
+    text-align: center; /* محاذاة النص في العنوان إلى المنتصف */
+    margin-bottom: 30px; /* إضافة هامش سفلي بمقدار 30px بعد العنوان */
+    font-size: 2.5rem; /* تعيين حجم الخط إلى 2.5rem */
+}
+
+/* Department styling */
+.department {
+    display: flex; /* استخدام flexbox لعرض العناصر في صف واحد */
+    align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+    margin-bottom: 30px; /* إضافة هامش سفلي بمقدار 30px بين الأقسام */
+    padding: 15px; /* إضافة حشوة داخلية بمقدار 15px */
+    background-color: #e9f7fd; /* تعيين خلفية القسم إلى اللون الأزرق الفاتح */
+    border-radius: 8px; /* تعيين حواف مدورة للقسم بمقدار 8px */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف للقسم */
+}
+
+.department-image {
+    width: 200px; /* تعيين عرض الصورة إلى 200px */
+    height: 150px; /* تعيين ارتفاع الصورة إلى 150px */
+    border-radius: 8px; /* تعيين حواف مدورة للصورة بمقدار 8px */
+    margin-right: 20px; /* إضافة هامش يمين بمقدار 20px بين الصورة والنص */
+    object-fit: cover; /* التأكد من تغطية الصورة بالكامل للمساحة المخصصة لها دون التشويه */
+}
+
+.department-info {
+    max-width: 650px; /* تعيين الحد الأقصى لعرض النص إلى 650px */
+}
+
+.department h2 {
+    font-size: 1.8rem; /* تعيين حجم خط العنوان الفرعي إلى 1.8rem */
+    margin-bottom: 10px; /* إضافة هامش سفلي بمقدار 10px بعد العنوان */
+}
+
+.department p {
+    font-size: 1rem; /* تعيين حجم خط الفقرات إلى 1rem */
+    margin-bottom: 10px; /* إضافة هامش سفلي بمقدار 10px بعد كل فقرة */
+}
+
+.department strong {
+    font-weight: bold; /* جعل النص داخل الوسم <strong> بالخط العريض */
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .department {
+        flex-direction: column; /* تغيير اتجاه العناصر إلى عمودي بدلًا من أفقي */
+        align-items: flex-start; /* محاذاة العناصر إلى الجهة اليسرى */
+    }
+
+    .department-image {
+        width: 100%; /* جعل عرض الصورة 100% من العنصر */
+        height: auto; /* تغيير ارتفاع الصورة ليكون تلقائيًا وفقًا للعرض */
+        margin-bottom: 15px; /* إضافة هامش سفلي بمقدار 15px بين الصورة والنص */
+    }
+
+    .department-info {
+        max-width: 100%; /* تعيين الحد الأقصى لعرض النص إلى 100% */
+    }
+}

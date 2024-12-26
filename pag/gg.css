@@ -1,0 +1,67 @@
+/* تنسيق أساسي للصفحة */
+body {
+    font-family: Arial, sans-serif; /* تحديد نوع الخط */
+    margin: 0; /* إزالة المسافات الخارجية */
+    padding: 0; /* إزالة المسافات الداخلية */
+    line-height: 1.6; /* ضبط ارتفاع الأسطر */
+    background-color: #f4f4f4; /* لون الخلفية */
+}
+
+/* تنسيق الهيدر */
+header {
+    background-color: #00b4cc; /* لون الخلفية */
+    color: white; /* لون النص */
+    padding: 20px; /* مساحة داخلية */
+    text-align: center; /* توسيط النصوص */
+}
+
+/* تنسيق قسم الأطباء */
+.doctors {
+    display: grid; /* استخدام شبكة لتنسيق البطاقات */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* ضبط عدد الأعمدة تلقائيًا */
+    gap: 20px; /* المسافة بين البطاقات */
+    padding: 20px;
+}
+
+/* تنسيق بطاقة الطبيب */
+.doctor-card {
+    background: white; /* لون الخلفية */
+    border: 1px solid #ddd; /* إطار خفيف */
+    border-radius: 8px; /* زوايا دائرية */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+    text-align: center; /* توسيط النصوص */
+    padding: 15px; /* مساحة داخلية */
+}
+
+/* تنسيق صورة الطبيب */
+.doctor-card img {
+    width: 100%; /* جعل الصورة تأخذ عرض البطاقة بالكامل */
+    height: 200px; /* تحديد ارتفاع ثابت */
+    object-fit: cover; /* ضبط أبعاد الصورة */
+    border-radius: 8px; /* زوايا دائرية */
+}
+
+/* تنسيق النصوص داخل البطاقة */
+.doctor-card h2 {
+    margin: 10px 0; /* مسافة بين الاسم وباقي النصوص */
+    color: #333; /* لون النص */
+}
+
+.doctor-card p {
+    margin: 5px 0; /* مسافة صغيرة بين النصوص */
+    color: #555; /* لون النصوص الثانوية */
+}
+
+/* تنسيق الأزرار */
+.doctor-card button {
+    background-color: #00b4cc; /* لون خلفية الزر */
+    color: white; /* لون النص */
+    border: none; /* إزالة الإطار */
+    padding: 10px 15px; /* مساحة داخلية للزر */
+    cursor: pointer; /* تغيير المؤشر عند التحويم */
+    border-radius: 5px; /* زوايا دائرية */
+}
+
+.doctor-card button:hover {
+    background-color: #007a8a; /* تغيير لون الزر عند التحويم */
+}
